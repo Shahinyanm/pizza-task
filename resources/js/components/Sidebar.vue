@@ -5,7 +5,7 @@
             <div class="footer">
                 <div class="summary">
                     <span>Total</span>
-                    <span class="total">{{currentOrder.total | currency}}/ <small>{{currentOrder.total * 1.2 | euro}}</small></span>
+                    <span class="total">{{currentOrder.total | currency}}/ <small>{{currentOrder.total * 0.89 | euro}}</small></span>
                 </div>
                 <div class="action">
                     <button @click="$router.push('checkout')">Checkout</button>

@@ -118,7 +118,7 @@ export default {
             const grantTotal = Number(this.currentOrder.total) + 5
             return {
                 usd: grantTotal,
-                euro: grantTotal * 1.2
+                euro: grantTotal * 0.89
             };
         }
     },
