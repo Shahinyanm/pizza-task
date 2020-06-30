@@ -61,7 +61,7 @@ $darken: #121618;
 $primary: #fac564;
 $secondary: #f8b500;
 .services-section {
-    background: url('/storage/images/food.png') repeat;
+    background: url('/images/food.png') repeat;
     color: #5c3d03;
     .overlay {
         position: absolute;

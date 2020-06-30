@@ -1,7 +1,7 @@
 <template>
     <div class="menu">
         <section class="slider img">
-            <div class="slider-item" :style="{ backgroundImage: 'url(/storage/images/bg_3.jpg)' }">
+            <div class="slider-item" :style="{ backgroundImage: 'url(/images/bg_3.jpg)' }">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row slider-text justify-content-center align-items-center">
