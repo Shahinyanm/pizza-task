@@ -15,7 +15,7 @@
                     <b-nav-item :to="{ name: 'menu' }" exact exact-active-class="active">Menu</b-nav-item>
                     <b-nav-item :to="{ name: 'about' }" exact exact-active-class="active">About</b-nav-item>
                     <b-button v-if="$route.name != 'checkout'" v-b-toggle.sidebar-right class="shopping-cart">
-                        <vue-icon icon="shopping-cart" size="2x" /><span class="ml-3">{{orderItemsCount}}</span>
+                        <vue-icon icon="shopping-cart" size="lg" /><span class="ml-3">{{orderItemsCount}}</span>
                     </b-button>
                 </b-navbar-nav>
             </b-collapse>
@@ -305,6 +305,11 @@ $secondary: #f8b500;
         background: transparent;
         color: $white;
         border: none;
+        
+        svg {
+            width: 22px;
+            height: 22px;
+        }
         span {
             color: $white;
             font-size: 20px;

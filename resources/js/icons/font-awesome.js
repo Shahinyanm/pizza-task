@@ -1,4 +1,4 @@
-import { faMapMarkerAlt, faPhoneAlt, faClock, faEnvelope, faShoppingCart, faBars} from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faPhoneAlt, faClock, faEnvelope, faShoppingCart, faBars, faTrash} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 export default {
@@ -10,5 +10,6 @@ export default {
    faInstagram,
    faEnvelope,
    faShoppingCart,
-   faBars
+   faBars,
+   faTrash
 }

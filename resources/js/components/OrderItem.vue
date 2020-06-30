@@ -2,7 +2,7 @@
     <div class="px-3 py-2 order-item">
         <div class="order-item__title">
             <span>{{name}}</span>
-            <a @click.prevent="remove">remove item</a>
+            <a @click.prevent="remove"><vue-icon icon="trash" size="lg" /></a>
         </div>
         <div class="order-item__content">
             <p>
@@ -83,8 +83,13 @@ $secondary: #f8b500;
         a {
             color: #007bff;
             cursor: pointer;
-            &:hover {
+            svg {
                 color: $primary;
+            }
+            &:hover {
+                svg {
+                    color: $primary;
+                }
             }
         }
     }
