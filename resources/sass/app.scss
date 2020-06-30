@@ -1,0 +1,162 @@
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import 'bootstrap/scss/_mixins.scss';
+@import './flaticon.scss';
+
+$font-primary: 'Poppins',Arial, sans-serif;
+$font-secondary: 'Josefin Sans',Arial, sans-serif;
+$font-tertiary: 'Nothing You Could Do', cursive;
+
+$white: #fff;
+$black: #000;
+$darken: #121618;
+
+$primary: #fac564;
+$secondary: #f8b500;
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($transition) {
+    -moz-transition:    all $transition ease;
+    -o-transition:      all $transition ease;
+    -webkit-transition: all $transition ease;
+    -ms-transition: 		all $transition ease;
+    transition:         all $transition ease;
+}
+
+body {
+   font-family: "Poppins", Arial, sans-serif;
+   background: #121618;
+   font-size: 15px;
+   line-height: 1.8;
+   font-weight: 300;
+   color: gray;
+   background: url('../../storage/app/public/images/bg_4.jpg') no-repeat fixed;
+   background-size: cover;
+   margin: 0;
+   padding: 0;
+}
+
+span{
+	color: lighten($black,75%);
+}
+a {
+	transition: .3s all ease;
+	color: $primary;
+	&:hover, &:active, &:focus {
+		color: $primary;
+		outline: none !important;
+		text-decoration: none !important;
+	}
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.4;
+	color: $white;
+	font-weight: 400;
+	font-family: $font-secondary;
+}
+
+.text-primary {
+	color: $primary;
+}
+
+//BUTTON
+.btn {
+   cursor: pointer;
+	@include border-radius(0);
+	box-shadow: none!important;
+	font-size: 13px;
+	&:hover, &:active, &:focus {
+		outline: none;
+	}
+	&.btn-primary {
+		background: lighten($primary,0);
+		border: 1px solid lighten($primary,0);
+		color: $black;
+		&:hover {
+			border: 1px solid $primary;
+			background: transparent !important;
+			color :$primary;
+		}
+		&.btn-outline-primary {
+			border: 1px solid $primary;
+			background: transparent;
+			color :$primary;
+			&:hover {
+				border: 1px solid transparent;
+				background: $primary;
+				color :$white;
+			}
+		}
+	}
+	&.btn-white {
+		background: $white;
+		border: 1px solid $white;
+		color: $black;
+		&:hover {
+			border: 1px solid $black;
+			background: $black;
+			color :$white;
+		}
+		&.btn-outline-white {
+			border-color: rgba($white, .8);
+			background: none;
+			border-width: 1px;
+			color: $white;
+			&:hover, &:focus, &:active {
+				background: $primary;
+				border-color: $primary;
+				color: $black;
+			}
+		}
+	}
+	&.btn-outline-black {
+		border-color: rgba($black, 1);
+		background: none;
+		border-width: 1px;
+		color: $black;
+		&:hover, &:focus, &:active {
+			background: $black;
+			border-color: $black;
+			color: $white;
+		}
+	}
+}
+
+.ftco-section {
+	padding: 7em 0;
+	position: relative;
+}
+
+.hero-wrap,
+.img,
+.blog-img,
+.user-img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+.img-about{
+	@include media-breakpoint-down(sm){
+		height: 400px;
+		margin-bottom: 30px;
+	}
+}
+
+.hide-scrollbar {
+   -ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+	
+	&::-webkit-scrollbar {
+		display: none;
+  }
+}
