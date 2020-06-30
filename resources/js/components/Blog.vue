@@ -10,7 +10,7 @@
             <div class="row d-flex">
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
-                        <a href="https://blog.leadformance.com/fr/pizza-hut-foodtech-web-to-store" target="blank" class="block-20" :style="{ backgroundImage: 'url(' + require('../../../storage/app/public/images/image_1.jpg') + ')' }">
+                        <a href="https://blog.leadformance.com/fr/pizza-hut-foodtech-web-to-store" target="blank" class="block-20" :style="{ backgroundImage: url('storage/images/image_1.jpg')}">
                   </a>
                         <div class="text py-4 d-block">
                             <div class="meta">
@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
-                        <a href="http://blog.pizzahut.com/pizza-hut-proves-bigger-is-better-with-the-colossal-classic-big-dipper-pizza" target="blank" class="block-20" :style="{ backgroundImage: 'url(' + require('../../../storage/app/public/images/image_2.jpg') + ')' }">
+                        <a href="http://blog.pizzahut.com/pizza-hut-proves-bigger-is-better-with-the-colossal-classic-big-dipper-pizza" target="blank" class="block-20" :style="{ backgroundImage: url('storage/images/image_2.jpg') }">
                   </a>
                         <div class="text py-4 d-block">
                             <div class="meta">
@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
-                        <a href="http://blog.pizzahut.com/live-blog-pizza-hut-community-health-safety" target="blank" class="block-20" :style="{ backgroundImage: 'url(' + require('../../../storage/app/public/images/image_3.jpg') + ')' }">
+                        <a href="http://blog.pizzahut.com/live-blog-pizza-hut-community-health-safety" target="blank" class="block-20" :style="{ backgroundImage: url('storage/images/image_3.jpg') }">
                   </a>
                         <div class="text py-4 d-block">
                             <div class="meta">

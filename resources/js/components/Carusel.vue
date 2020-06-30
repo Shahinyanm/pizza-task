@@ -1,6 +1,6 @@
 <template>
     <section class="home">
-        <carousel :per-page="1" class="slider" paginationPosition="bottom-overlay" :paginationSize="15" paginationColor="rgba(255, 255, 255, 0.5)" loop autoplay :autoplayTimeout="3000" :style="{ backgroundImage: 'url(' + require('../../../storage/app/public/images/bg_1.jpg') + ')' }">
+        <carousel :per-page="1" class="slider" paginationPosition="bottom-overlay" :paginationSize="15" paginationColor="rgba(255, 255, 255, 0.5)" loop autoplay :autoplayTimeout="3000" :style="{ backgroundImage: url('storage/images/bg_1.jpg') }">
             <slide class="slider-item">
                 <div class="overlay"></div>
                 <b-container>
@@ -15,7 +15,7 @@
                             </p>
                         </div>
                         <div class="col-md-6 ftco-animate">
-                            <img src="../../../storage/app/public/images/bg_1.png" class="img-fluid" alt="">
+                            <img src="storage/images/bg_1.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </b-container>
@@ -32,13 +32,13 @@
                             <p><a @click="$router.push('menu')" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a @click="$router.push('menu')" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
                         </div>
                         <div class="col-md-6 ftco-animate">
-                            <img src="../../../storage/app/public/images/bg_2.png" class="img-fluid" alt="">
+                            <img src="storage/images/bg_2.png" class="img-fluid" alt="">
                         </div>
     
                     </div>
                 </b-container>
             </slide>
-            <slide class="slider-item" :style="{ backgroundImage: 'url(' + require('../../../storage/app/public/images/bg_3.jpg') + ')' }">
+            <slide class="slider-item" :style="{ backgroundImage: url('storage/images/bg_3.jpg') }">
                 <div class="overlay"></div>
                 <b-container>
                     <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">

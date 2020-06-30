@@ -168,7 +168,7 @@ $secondary: #f8b500;
             font-size: 18px;
             span {
                 background: $darken;
-                background: url('../../../storage/app/public/images/bg_4.jpg') no-repeat fixed;
+                background: url('/storage/images/bg_4.jpg') no-repeat fixed;
                 padding-right: 20px;
             }
         }
@@ -177,7 +177,7 @@ $secondary: #f8b500;
             color: $primary;
             text-align: right;
             background: $darken;
-            background: url('../../../storage/app/public/images/bg_4.jpg') no-repeat fixed;
+            background: url('/storage/images/bg_4.jpg') no-repeat fixed;
             font-size: 16px;
         }
     }
