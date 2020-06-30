@@ -1,6 +1,6 @@
 <template>
     <section class="d-md-flex about">
-        <div class="one-half img" :style="{ backgroundImage: url('storage/images/about.jpg') }"></div>
+        <div class="one-half img" :style="{ backgroundImage: 'url(/storage/images/about.jpg)' }"></div>
         <div class="one-half">
             <div class="heading-section">
                 <h2 class="mb-4">Welcome to <span class="flaticon-pizza">Pizza</span> A Restaurant</h2>
