@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Str;
 
-$DATABASE_URL=parse_url(env('DATABASE_URL'), PHP_URL_SCHEME);
+$DATABASE_URL=parse_url(env('DATABASE_URL'));
 
 return [
     
